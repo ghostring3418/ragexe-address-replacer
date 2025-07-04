@@ -7,9 +7,12 @@ Procedimento:
 2. Espera a memória iniciar os valores default.
 3. Escreve na memória os valores alterados.
 
-OBS: Executar em modo de administrador.
-
 ## Módulos necessários
 
 - pymem
 - pywin32
+
+## Execução
+
+1. Ajustar as variáveis `EXE_PATH`, `IP` e `PORT` conforme desejado.
+2. Executar como administrador.
