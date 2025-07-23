@@ -8,7 +8,7 @@ IP = "172.65.XX.XX"
 TAADDRESS_ADDR = 0x0143E808
 DOMAIN_PTR_ADDR = 0x010C97E8
 # Entrada dinâmica da porta
-porta_input = input("Digite a porta que deseja redirecionar (ex: 6901): ").strip()
+porta_input = input("Informe a porta [6901]: ").strip() or "6901"
 if not porta_input.isdigit():
     print("Porta inválida.")
     exit(1)
