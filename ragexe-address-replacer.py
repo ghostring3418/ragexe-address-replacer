@@ -5,9 +5,14 @@ import win32process
 
 EXE_PATH = r"C:\Jogos\Ragnarok\Ragexe.exe"
 IP = "172.65.XX.XX"
-PORT = 6901
 TAADDRESS_ADDR = 0x0143E808
 DOMAIN_PTR_ADDR = 0x010C97E8
+# Entrada dinâmica da porta
+porta_input = input("Informe a porta [6901]: ").strip() or "6901"
+if not porta_input.isdigit():
+    print("Porta inválida.")
+    exit(1)
+PORT = int(porta_input)
 
 # 1- Abre o Rag
 h_process, h_thread, pid, tid = win32process.CreateProcess(
